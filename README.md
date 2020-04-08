@@ -1,5 +1,7 @@
 # menubar
 
+![Image text](https://github.com/haomashroom/menubar/blob/master/data/readme.jpg)
+
 ## Project setup
 ```
 npm install
