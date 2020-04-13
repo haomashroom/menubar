@@ -9,8 +9,10 @@
 <script>
     import MenuItem from './MenuItem.vue'
     import { findComponentUpward } from '../../utils/utils';
+    import Emitter from '../../mixins/emitter';
     export default {
         name:'menuSlide',
+        mixins: [ Emitter],
         props: {
           model:{
               type: Object,
@@ -48,6 +50,8 @@
             handleClick(){
                 this.menubar.closeOther(this);
                 this.toggle();
+                //触发外置点击事件
+                this.dispatch('menubar', 'clickMenu', this.model);
             }
         },
         components:{

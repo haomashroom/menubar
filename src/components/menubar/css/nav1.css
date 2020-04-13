@@ -5,29 +5,31 @@ a {
     text-decoration: none !important;
 }
 .swiper-wrapper{
-    background: linear-gradient(#424242 , #070708 ) !important;
+    background: linear-gradient(#f4f4f4 , #dbdbdb ) !important;
 }
 .ui-link{
-    color:white;
+    color:#4b77be;
     font-weight: bold;
-    font-size: 14px;
 }
 .swiper-menu .ui-link{
-    color: #999 !important;
+    color: #666 !important;
     font-weight: bold;
 }
 .swiper-menu li:hover {
     background: #cccaca;
     background-color:rgba(0, 0, 0, 0.06);
 }
-/*.swiper-menu li:hover >a{*/
-    /*color: #4b77be !important;*/
-/*}*/
+.swiper-menu li:hover >a{
+    color: #4b77be !important;
+}
 .font-grey{
     color:#bfcad1 !important;
     font-size: 18px;
     padding-right: 15px;
     padding-left: -15px;
+}
+.font-grey.collect{
+    color:#f2784b !important;
 }
 .swiper1 .swiper-slide {
     text-align: center;
@@ -50,15 +52,14 @@ a {
     margin: 0 !important;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
     width: auto !important;
-    padding: 0 60px;
+    padding: 0 40px 0 40px;
     color: beige;
 }
 .swiper-wrapper >li.selected >a{
-    color: white !important;
-    font-weight: bold;
+    color: #23527C !important;
 }
 .swiper-wrapper >li.selected{
-    background: linear-gradient(#bb4242 , #a92626 );
+    background: linear-gradient(#ddd , #a2a2a2 );
 }
 .open{
     display: block !important;
@@ -71,7 +72,7 @@ a {
     left: 0;
     z-index: 1;
     background: #444;
-    background:  linear-gradient(#313132 , #313132 ) !important;
+    background:  linear-gradient(#f4f4f4 , #dbdbdb ) !important;
     -moz-box-shadow: 0 -1px rgba(255,255,255,.3);
     -webkit-box-shadow: 0 -1px 0 rgba(255,255,255,.3);
     box-shadow: 0 -1px 0 rgba(255,255,255,.3);
@@ -85,7 +86,6 @@ a {
     transition: all .2s ease-in-out;
     box-shadow: 4px 2px rgba(102,102,102,.1);
     border-radius: 5px !important;
-    margin-top: 20px;
 }
 .swiper-menu li{
     float: none;
@@ -96,9 +96,9 @@ a {
     _line-height: 0;
 }
 .swiper-menu li:not(:last-child){
-    box-shadow: 0 1px 0 #3c3b3b, 0 1px 0 black;
-    -moz-box-shadow: 0 1px 0 #3c3b3b, 0 1px 0 black;
-    -webkit-box-shadow:0 1px 0 #3c3b3b, 0 1px 0 black;
+    box-shadow: 0 1px 0 #d8d8d8, 0 1px 0 #d8d8d8;
+    -moz-box-shadow: 0 1px 0 #d8d8d8, 0 1px 0 #d8d8d8;
+    -webkit-box-shadow: 0 1px 0 #d8d8d8, 0 1px 0 #d8d8d8;
 }
 
 .swiper-menu li a{
@@ -134,15 +134,15 @@ a {
     display: none;
 }
 
-/*.swiper-menu li:first-child > a:after {*/
-    /*content: '';*/
-    /*position: absolute;*/
-    /*left: 65px;*/
-    /*top: -5px;*/
-    /*border-left: 6px solid transparent;*/
-    /*border-right: 6px solid transparent;*/
-    /*border-bottom: 6px solid #313132;*/
-/*}*/
+.swiper-menu li:first-child > a:after {
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: -5px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #f4f4f4;
+}
 .swiper-container{
     text-shadow: none !important;
     /*overflow:  initial !important;*/
@@ -168,9 +168,7 @@ a {
 .ui-collapsible-content{
     padding: 0 5px !important;
 }
-.swiper-wrapper{
-    width: 1000px;
-}
+
 
 
 ul.topnav {
@@ -205,29 +203,25 @@ ul.topnav li a {
 .swiper-bg{
     background: linear-gradient(#f4f4f4 , #dbdbdb ) !important;
 }
-/*.swiper-wrapper >li:not(:last-child):after {*/
-    /*content: "";*/
-    /*border-left: 20px solid  !important;*/
-    /*border-top: 20px solid transparent;*/
-    /*border-bottom: 20px solid transparent;*/
-    /*position: absolute;*/
-    /*right: -20px;*/
-    /*top: 0;*/
-    /*z-index: 1;*/
-    /*background-image:linear-gradient(#313132 , #313132 );*/
-    /*!*background-clip:padding-box,border-box;*!*/
-    /*!*background-origin:padding-box,border-box;*!*/
-
-/*}*/
-/*.swiper-wrapper >li:not(:first-child):before{*/
-    /*content: "";*/
-    /*border-top: 19px solid #bb4242 !important;*/
-    /*border-bottom: 19px solid #a92626 !important;*/
-    /*border-left: 19px solid transparent;*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: -18px;*/
-/*}*/
+.swiper-wrapper >li:not(:last-child):after {
+    content: "";
+    border-left: 20px solid #7f7d7d !important;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    z-index: 9999;
+}
+.swiper-wrapper >li:not(:first-child):before{
+    content: "";
+    border-top: 20px solid #7f7d7d !important;
+    border-bottom: 20px solid #7f7d7d !important;
+    border-left: 20px solid transparent;
+    position: absolute;
+    top: 0;
+    left: -20px;
+}
 
 .swiper-wrapper >li:first-child{
     border-top-left-radius: 5px !important;

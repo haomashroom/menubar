@@ -1,7 +1,7 @@
 <template>
         <div  class="swiper-container swiper1"  ref="slider" >
                 <div class="swiper-wrapper" >
-                    <Menu v-for="(item,index) in menuData" :model="item" ref="menuSlide"></Menu>
+                    <Menu v-for="(item,index) in menuData" :model="item" ref="menuSlide" :key="index"></Menu>
                 </div>
         </div>
 </template>
@@ -42,6 +42,7 @@
 
         },
         mounted(){
+            this.initHandle();
             setTimeout(() => {
                 this._initSlider()
             }, 1000)
@@ -86,8 +87,24 @@
                         this.swiper.update();
                     }, 20);
                 }
+                this.clickMenuItemHandle(model);
+
+            },
+            clickMenuHandle(model){
+                this.$emit('on-clickMenu',model);
+            },
+            clickMenuItemHandle(menuItem){
+                this.$emit('on-clickMenuItem',menuItem);
+            },
+            renderLeafHandle(menuItem){
+                this.$emit('on-renderLeaf',menuItem);
+            },
+            initHandle(){
+                this.$on('clickMenu',this.clickMenuHandle)
+                this.$on('renderLeaf',this.renderLeafHandle)
             }
-        }
+
+        },
     }
 </script>  
     

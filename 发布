@@ -1,0 +1,9 @@
+1. 执行打包   npm run dist
+2. 切换npm库(注意，url最后的"/"不能丢)  npm config set registry http://192.168.1.117:8088/repository/iMeNPM/
+3. 登录npm(admin/123qwe!@#,admin@example.com)    npm login
+4. 复制package.json 到 dist目录
+5. 发布到npm库 npm publish dist
+使用
+1. 切换npm库(注意，url最后的"/"不能丢)    npm config set registry http://192.168.1.117:8088/repository/npmGroup/
+2. 安装库       npm install iMeTisUI  --save
+3. 切回npm库 npm config set registry http://registry.npmjs.org
