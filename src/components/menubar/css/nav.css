@@ -1,11 +1,9 @@
-.swiper1 {
-    width: 100%;
-}
 a {
     text-decoration: none !important;
 }
 .swiper-wrapper{
     background: linear-gradient(#424242 , #070708 ) !important;
+    width: 2000px;
 }
 .ui-link{
     color:white;
@@ -113,17 +111,7 @@ a {
 
 
 
-.swiper2 {
-    width: 100%;
-}
-.swiper2 .swiper-slide {
-    height: calc(100vh - 50px);
-    background-color: #ccc;
-    color: #fff;
-    text-align: left;
-    box-sizing: border-box !important;
-    overflow-x: hidden !important;
-}
+
 .ui-content{
     padding: 0 !important;
 }
@@ -152,9 +140,7 @@ a {
     z-index: unset !important;
 }
 
-.swiper2{
-    margin-top: 35px !important;
-}
+
 /*.swiper1  div.swiper-wrapper >.swiper-slide :hover{*/
     /*padding-right: 0 !important;*/
 /*}*/
@@ -168,10 +154,6 @@ a {
 .ui-collapsible-content{
     padding: 0 5px !important;
 }
-.swiper-wrapper{
-    width: 1000px;
-}
-
 
 ul.topnav {
     padding: 0;
@@ -240,16 +222,12 @@ ul.topnav li a {
 
 @media (max-width: 767px){
     .swiper-container{
-        overflow:  initial !important;
-        overflow-x: hidden !important;
+        /*overflow:  initial !important;*/
+        /*overflow-x: hidden !important;*/
         height: 400px;
     }
     .swiper-wrapper{
         height: fit-content;
-        width: 1000px;
-        background: linear-gradient(#f4f4f4 , #dbdbdb ) !important;
-    }
-    .new-swiper{
-        margin-top: -360px;
+        background: linear-gradient(#424242 , #070708 ) !important;
     }
 }

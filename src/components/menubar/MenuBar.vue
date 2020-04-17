@@ -48,6 +48,7 @@
             }, 1000)
         },
         methods:{
+
             _initSlider(){
                 this.swiper = new Swiper(this.$refs.slider, {
                     slidesPerView : 'auto'
