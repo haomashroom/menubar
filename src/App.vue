@@ -24,20 +24,23 @@ export default {
       this.list = [res];
    },
     methods:{
+       //点击横向菜单
         clickMenu(model){
             console.log("model",model);
         },
+        //点击下拉菜单
         clickMenuItem(menuItem){
             console.log("menuItem",menuItem)
         },
+        //点击下拉菜单没有儿子节点触发
         renderLeaf(menuItem){
             console.log("menuItem111",menuItem);
             let model = menuItem.model;
-//            if(model.domain =="PB07"){
+            if(model.domain =="PB07"){
                 var data1 = [{name:"新数据1",children:[{name:"测试数据1"}]},{name:"新数据2",children:[{name:"测试数据2"}]}];
                 //动态添加数据
                 menuItem.addSubItems(data1);
-//            }
+            }
 
         }
 
