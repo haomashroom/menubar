@@ -1,6 +1,6 @@
 {
   "name": "vmenubar",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": false,
   "author": "mashroom",
   "description": "横向菜单条,支持移动端",

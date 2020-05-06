@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-   <menu-bar :data="list" @on-clickMenu="clickMenu" @on-clickMenuItem="clickMenuItem" @on-renderLeaf="renderLeaf"></menu-bar>
+   <menu-bar :data="list" @on-clickMenu="clickMenu" @on-clickMenuItem="clickMenuItem" @on-renderLeaf="renderLeaf" ></menu-bar>
   </div>
 </template>
 

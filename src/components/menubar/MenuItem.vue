@@ -32,6 +32,8 @@
                 this.model.open = true;
                 this.menubar.addMenu(this.model);
                 this.menu.close();
+                //触发外置点击事件
+                this.dispatch('menubar', 'clickMenuItem', this);
             },
             addSubItems(array){
                 this.model.children = array;

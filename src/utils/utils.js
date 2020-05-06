@@ -3,7 +3,7 @@ function findComponentUpward (context, componentName, componentNames) {
     if (typeof componentName === 'string') {
         componentNames = [componentName];
     } else {
-        componentNames = componentName;
+        componentNames = componentName;``
     }
 
     let parent = context.$parent;

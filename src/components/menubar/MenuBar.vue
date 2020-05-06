@@ -48,7 +48,6 @@
             }, 1000)
         },
         methods:{
-
             _initSlider(){
                 this.swiper = new Swiper(this.$refs.slider, {
                     slidesPerView : 'auto'
@@ -88,8 +87,6 @@
                         this.swiper.update();
                     }, 20);
                 }
-                this.clickMenuItemHandle(model);
-
             },
             clickMenuHandle(model){
                 this.$emit('on-clickMenu',model);
@@ -102,6 +99,7 @@
             },
             initHandle(){
                 this.$on('clickMenu',this.clickMenuHandle)
+                this.$on('clickMenuItem',this.clickMenuItemHandle)
                 this.$on('renderLeaf',this.renderLeafHandle)
             }
 
